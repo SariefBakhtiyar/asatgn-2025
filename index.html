@@ -5,10 +5,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ASAT SMK Ma'arif 5 Gombong</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Tambahan khusus untuk animasi logo */
+    .logo {
+      height: 100px;
+      margin-bottom: 10px;
+      animation: glow 2.5s infinite alternate;
+      border-radius: 10px;
+    }
+
+    @keyframes glow {
+      0% {
+        box-shadow: 0 0 5px #00ff88, 0 0 10px #00ff88, 0 0 15px #00ff88;
+        transform: scale(1);
+      }
+      100% {
+        box-shadow: 0 0 20px #00ff88, 0 0 40px #00ff88, 0 0 60px #00ff88;
+        transform: scale(1.05);
+      }
+    }
+
+    body {
+      font-family: sans-serif;
+      background: url('LOGO-SEKOLAH.png') no-repeat center center fixed;
+      background-size: 60%;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+    }
+
+    header, footer, nav, main {
+      background-color: rgba(255, 255, 255, 0.95);
+      margin: 0 auto;
+      padding: 20px;
+      max-width: 900px;
+      border-radius: 10px;
+    }
+
+    header {
+      text-align: center;
+    }
+
+    nav {
+      text-align: center;
+      margin: 20px auto;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: green;
+      font-weight: bold;
+    }
+
+    main h2 {
+      margin-top: 0;
+    }
+
+    blockquote {
+      font-style: italic;
+      color: darkgreen;
+      font-weight: bold;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Logo Sekolah" class="logo">
+    <img src="logo.png" alt="Logo Sekolah" class="logo" />
     <h1>Informasi ASAT 2025</h1>
     <p>SMK Ma'arif 5 Gombong</p>
   </header>
