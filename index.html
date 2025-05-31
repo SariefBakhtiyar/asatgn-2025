@@ -7,26 +7,36 @@
   <link rel="stylesheet" href="style.css" />
   <style>
     body {
+      margin: 0;
+      padding: 0;
       background: url('LOGO-SEKOLAH.png') no-repeat center center fixed;
       background-size: 60%;
-      opacity: 1;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      font-family: sans-serif;
     }
 
-    main {
-      background-color: rgba(255, 255, 255, 0.9); /* Supaya teks tetap mudah dibaca */
-      padding: 20px;
-      border-radius: 10px;
-      margin: 20px;
-    }
-
-    header, footer, nav {
+    header, footer, nav, main {
       background-color: rgba(255, 255, 255, 0.95);
-      padding: 10px;
+      margin: 0 auto;
+      padding: 20px;
+      max-width: 900px;
+      border-radius: 10px;
+    }
+
+    header {
       text-align: center;
     }
 
     .logo {
-      height: 80px;
+      height: 100px;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      text-align: center;
+      margin: 20px auto;
     }
 
     nav a {
@@ -36,16 +46,24 @@
       font-weight: bold;
     }
 
+    main h2 {
+      margin-top: 0;
+    }
+
     blockquote {
       font-style: italic;
       color: darkgreen;
       font-weight: bold;
     }
+
+    ul {
+      padding-left: 20px;
+    }
   </style>
 </head>
 <body>
   <header>
-    <img src="LOGO-SEKOLAH.png" alt="Logo Sekolah" class="logo">
+    <img src="LOGO-SEKOLAH.png" alt="Logo Sekolah" class="logo" />
     <h1>Informasi ASAT 2025</h1>
     <p>SMK Ma'arif 5 Gombong</p>
   </header>
